@@ -798,9 +798,11 @@ header {
 header .header-bottom img {
     padding: 5px;
     margin-top: 0px;
-    max-width: 59px;
+    max-width: 150px;
 }
 }
-#menu-jk > div > div > div.col-lg-3.col-md-12.logo > a:nth-child(1) > img{
-  max-width: 60px;
-}
+@media screen and (min-width: 992px){
+  #menu-jk > div > div > div.col-lg-3.col-md-12.logo > a:nth-child(1) > img{
+    max-width: 170px;
+  }
+  }
