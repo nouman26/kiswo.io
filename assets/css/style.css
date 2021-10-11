@@ -802,5 +802,5 @@ header .header-bottom img {
 }
 }
 #menu-jk > div > div > div.col-lg-3.col-md-12.logo > a:nth-child(1) > img{
-  max-width: 25%;
+  max-width: 60px;
 }
