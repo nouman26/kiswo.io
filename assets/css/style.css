@@ -806,3 +806,13 @@ header .header-bottom img {
     max-width: 170px;
   }
   }
+
+  .about-us .text-part p {
+    text-indent: 20px;
+    margin-bottom: 15px;
+    line-height: unset;
+    font-weight: unset;
+    text-align: unset;
+    font-size: 1;
+    font-size: 22px;
+}
