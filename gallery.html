@@ -14,6 +14,94 @@
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <style>
+        /* The Modal (background) */
+        #portfolio > div > div > div > img{
+            cursor: pointer;
+        }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 80px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+  .close {
+    top: 92px;
+    z-index: 10;
+    color: red;
+}
+}
+    </style>
 </head>
 
 <body>
@@ -124,55 +212,90 @@
  <!--  ************************* Gallery Starts Here ************************** -->
         <div id="portfolio" class="gallery">    
            <div class="container">
-              
               <div class="row">
-                
-
-        <div class="gallery-filter d-none d-sm-block">
-            <button class="btn btn-default filter-button" data-filter="all">All</button>
-            <button class="btn btn-default filter-button" data-filter="hdpe">Finance</button>
-            <button class="btn btn-default filter-button" data-filter="sprinkle">Digital Marketing</button>
-            <button class="btn btn-default filter-button" data-filter="spray"> Money</button>
-            <button class="btn btn-default filter-button" data-filter="irrigation">Business Alaysis</button>
-        </div>
+        
         <br/>
-
-
-
             <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter hdpe">
-                <img src="assets/images/events/image_01.jpg" class="img-responsive">
+                <img onclick="zoomimg('assets/images/events/image_01.jpg')" src="assets/images/events/image_01.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="assets/images/events/image_02.jpg" class="img-responsive">
+                <img onclick="zoomimg('assets/images/events/image_02.jpg')" src="assets/images/events/image_02.jpg" class="img-responsive">
             </div>
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter hdpe">
-                <img src="assets/images/events/image_01.jpg" class="img-responsive">
-            </div>
-
             <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
-                <img src="assets/images/events/image_03.jpg" class="img-responsive">
+                <img onclick="zoomimg('assets/images/events/image_03.jpg')" src="assets/images/events/image_03.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter spray">
-                <img src="assets/images/events/image_04.jpg" class="img-responsive">
+                <img onclick="zoomimg('assets/images/events/image_04.jpg')" src="assets/images/events/image_04.jpg" class="img-responsive">
             </div>
 
-          
-
             <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter spray">
-                <img src="assets/images/events/image_05.jpg" class="img-responsive">
+                <img onclick="zoomimg('assets/images/events/image_05.jpg')" src="assets/images/events/image_05.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
-                <img src="assets/images/events/image_06.jpg" class="img-responsive">
+                <img onclick="zoomimg('assets/images/events/image_06.jpg')" src="assets/images/events/image_06.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
-                <img src="assets/images/events/image_07.jpg" class="img-responsive">
+                <img onclick="zoomimg('assets/images/events/image_07.jpg')" src="assets/images/events/image_07.jpg" class="img-responsive">
+            </div>
+            
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
+                <img onclick="zoomimg('assets/images/events/image_08.jpg')" src="assets/images/events/image_08.jpg" class="img-responsive">
             </div>
 
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
+                <img onclick="zoomimg('assets/images/events/image_09.jpg')" src="assets/images/events/image_09.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
+                <img onclick="zoomimg('assets/images/events/image_10.jpg')" src="assets/images/events/image_10.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
+                <img onclick="zoomimg('assets/images/events/image_11.jpg')" src="assets/images/events/image_11.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
+                <img onclick="zoomimg('assets/images/events/image_12.jpg')" src="assets/images/events/image_12.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
+                <img onclick="zoomimg('assets/images/events/image_13.jpg')" src="assets/images/events/image_13.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
+                <img onclick="zoomimg('assets/images/events/image_14.jpg')" src="assets/images/events/image_14.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
+                <img onclick="zoomimg('assets/images/events/image_15.jpg')" src="assets/images/events/image_15.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
+                <img onclick="zoomimg('assets/images/events/image_16.jpg')" src="assets/images/events/image_16.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
+                <img onclick="zoomimg('assets/images/events/image_17.jpg')" src="assets/images/events/image_17.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
+                <img onclick="zoomimg('assets/images/events/image_18.jpg')" src="assets/images/events/image_18.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
+                <img onclick="zoomimg('assets/images/events/image_19.jpg')" src="assets/images/events/image_19.jpg" class="img-responsive">
+            </div>
+
+            <!-- The Modal for zooming Image -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
             
         </div>
     </div>
@@ -189,10 +312,10 @@
             <div class="row">
                 <div class="col-md-4 col-sm-12">
                     <h2>About Us</h2>
-                    <p>
-                        Smart Eye is a leading provider of information technology, consulting, and business process services. Our dedicated employees offer strategic insights, technological expertise and industry experience.
-                    </p>
-                    <p>We focus on technologies that promise to reduce costs, streamline processes and speed time-to-market, Backed by our strong quality processes and rich experience managing global... </p>
+                    <p>Khidmat Insaniat Social Welfare Organization works for needy and 
+                        deserving people. We carry out our social and welfare projects on 
+                        self funding and members contribution. 
+                        Helping Needy and Poor People is Main Mission and Goal of this Organization, from Providing food to ration , providing small businesses opportunities to legal advises this organization works for needy people on priority basis</p>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <h2>Useful Links</h2>
@@ -241,12 +364,10 @@
     </footer>
     <div class="copy">
             <div class="container">
-                <a href="https://www.smarteyeapps.com/">2015 &copy; All Rights Reserved | Designed and Developed by Smarteyeapps</a>
+                <a href="#">2021 &copy; All Rights Reserved - Khidmat Insaniat</a>
                 
                 <span>
-                <a><i class="fab fa-github"></i></a>
-                <a><i class="fab fa-google-plus-g"></i></a>
-                <a><i class="fab fa-pinterest-p"></i></a>
+                <a><i class="fab fa-instagram"></i></a>
                 <a><i class="fab fa-twitter"></i></a>
                 <a><i class="fab fa-facebook-f"></i></a>
         </span>
@@ -256,7 +377,28 @@
           
     
 </body>
-
+<!-- script to set display property -->
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    function zoomimg(imgsrc){
+      modal.style.display = "block";
+      modalImg.src = imgsrc;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
 <script src="assets/js/jquery-3.2.1.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
