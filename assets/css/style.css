@@ -812,3 +812,10 @@ header .header-bottom img {
     font-size: 1;
     font-size: 22px;
 }
+.social_links a{
+  color: white !important;
+}
+
+.social_links a i{
+  padding: 10px;
+}
