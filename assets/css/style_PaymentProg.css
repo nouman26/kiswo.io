@@ -1,0 +1,82 @@
+
+.cube p {
+    margin-top: -15px !important;
+}
+
+.state{
+    background-color: blanchedalmond;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+}
+
+.account_type_logo{
+  width: 110px;
+  margin: 0 !important;
+  padding:10px;
+}
+
+tr{
+  height: 29px;
+  padding:10px;
+  text-align:center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse !important;
+  border-style: hidden !important;
+  border: 1px solid #1e2436 !important;
+}
+  
+table td {
+  font-size: 1.3em;
+}
+  
+table td, table th {
+  border: 1px solid #1e2436;;
+  color: black;
+  font-weight: bold;
+}
+
+table th{
+  padding:10px ;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.alert ul,.alert h4{
+  padding-left: 20px;
+  text-align: left;
+}
+  
+/* =========================================
+Responsive
+========================================= */
+@media screen and (max-width: 786px) {
+  h3{
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .account_type_logo{
+    width: 90px;
+    padding:10px 2px;
+  }
+  h3{
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .account_type_logo{
+    width: 70px;
+  }
+}
+.page-nav h2 {
+  font-size: 40px;
+}
+.page-nav ul li {
+  font-size: 1.6rem;
+  font-weight: 400;
+}

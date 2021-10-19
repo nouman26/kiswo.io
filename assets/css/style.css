@@ -81,7 +81,9 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #545454; }
-
+.ulright li{
+    color: black !important;
+  }
 body {
   background-color: #f1f1f145 !important;
   -webkit-font-smoothing: antialiased;
@@ -818,4 +820,8 @@ header .header-bottom img {
 
 .social_links a i{
   padding: 10px;
+}
+
+.md-margin-bottom-40 span{
+ font-weight: bold;
 }
