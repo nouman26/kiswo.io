@@ -67,3 +67,8 @@ $(this).removeClass("active");
 $(this).addClass("active");
 
 });
+
+
+function donate_page(){
+    window.location.assign("donate.html")
+}
