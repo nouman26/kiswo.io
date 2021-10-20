@@ -72,3 +72,7 @@ $(this).addClass("active");
 function donate_page(){
     window.location.assign("donate.html")
 }
+
+function join_page(){
+    window.location.assign("https://docs.google.com/forms/d/e/1FAIpQLSeiXiOZEsYTmLWlpRTK3amzLzkxOsiljl0UTQmsyktJhHVjPQ/viewform?embedded=true")
+}
